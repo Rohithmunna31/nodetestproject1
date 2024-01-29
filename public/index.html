@@ -1,0 +1,28 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Post</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Create Post</h1>
+    <form id="addPostForm">
+      <label for="postLink">Post Link:</label>
+      <input type="text" id="postLink" name="postLink" required />
+
+      <label for="postDescription">Post Description:</label>
+      <textarea id="postDescription" name="postDescription" required></textarea>
+
+      <button type="submit" id="submit">Create Post</button>
+    </form>
+
+    <a href="/getposts">View All Posts</a>
+
+    <div id="postContainer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
